@@ -103,7 +103,7 @@ export const updateSeats = async ({
         ExpressionAttributeValues: {
           ':nextSeats': convertToAttr(nextSeats, {
             convertEmptyValues: false,
-            removeUndefinedValues: false
+            removeUndefinedValues: true
           })
         }
       })
